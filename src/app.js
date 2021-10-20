@@ -22,3 +22,19 @@ let konutKredileri=["Konut Kredisi","Emlak Kredisi","Kamu Konut Kredisi",25,85,7
 for(let i=0;i<konutKredileri.length;i++){
     console.log(konutKredileri[i]);
 }
+
+
+// var keywordu global özelliği var fonksiyonun içinde de erişilebilir
+var ap="Hello js"
+
+function greet(){
+    console.log(ap)
+}
+greet();
+
+let ap2="Hello Js"
+
+function greet2(){
+    console.log(ap2)
+}
+greet2()
