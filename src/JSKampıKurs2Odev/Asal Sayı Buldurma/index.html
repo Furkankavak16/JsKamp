@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asal Sayıları Bulduran</title>
+</head>
+<body>
+    <script>
+        function findPrime(...numbers){
+            for(let i=0; i< numbers.length; i++){
+                let count=0
+
+                for(let j=1;j<numbers[i];j++){
+                    if(numbers[i] % j==2){
+                        count++
+                    }
+
+                }
+
+                if(count==2){
+                    console.log("Asal sayıdır.")
+                }
+                else{
+                    console.log("Asal sayı değil")
+                }
+            }
+        }
+            findPrime(1,2,4,13);
+    </script>
+</body>
+</html>

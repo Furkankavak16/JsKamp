@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asal Sayı Bulma</title>
+</head>
+<body>
+  <label for="" class="alert alert-success mt-md-3">Sayıyı Giriniz:</label> <input type="text" name="" id="sayi" class="alert alert-info">
+    <button type="button" onclick="asalSayi()" class="btn btn-secondary mt-md-0">Kontrol</button>
+    <p id="result" class="alert alert-dark mt-3 col-5"></p>
+</body>
+<script>
+  
+    var sayi=0,i;
+    var text="";
+
+    function asalSayi(...sayilar){
+        var sayac=0;
+        sayi=document.querySelector('#sayi').value;
+        for(i=2;i<sayi;i++){
+            if(sayi%i==0){
+                sayac++;
+            }
+        }
+        if(sayac==0){
+            text="Sayı asaldır";
+        }
+        else{
+            text=" Sayı asal değil";
+        }
+        document.getElementById('result').innerHTML=text;
+    }
+   
+
+</script>
+</html>

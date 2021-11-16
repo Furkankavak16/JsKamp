@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100'e kadar olan Asal Sayıları bul</title>
+</head>
+<body>
+    <script>
+            alert("Birden 100'e kadar olan asal sayılar")
+
+        for(let i=2; i<100; i++){
+
+            var sayac=0;
+
+            for(let j=1; j<=i ; j++){
+                if(i%j == 0){
+                    sayac+=1;
+                }
+
+            }
+            if(sayac==2){
+                console.log("Bu sayı bir asal sayıdır.  " +i)
+            }
+        }
+    </script>
+</body>
+</html>
